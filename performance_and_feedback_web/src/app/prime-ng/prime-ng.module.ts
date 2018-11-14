@@ -6,6 +6,7 @@ import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {CheckboxModule} from 'primeng/checkbox';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
 
 @NgModule({
   exports: [
@@ -15,7 +16,8 @@ import {CheckboxModule} from 'primeng/checkbox';
     TableModule,
     ButtonModule,
     InputTextModule,
-    CheckboxModule
+    CheckboxModule,
+    ScrollPanelModule
   ],
   declarations: []
 })
