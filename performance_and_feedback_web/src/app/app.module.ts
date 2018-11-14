@@ -22,6 +22,8 @@ import { AppraiserViewComponent } from './appraiser-view/appraiser-view.componen
 import { SelfDevelopmentComponent } from './self-development/self-development.component';
 import { OrganisationalComponent } from './organisational/organisational.component';
 import { ProjectIndicatorsComponent } from './project-indicators/project-indicators.component';
+import { TeamPerformanceComponent } from './team-performance/team-performance.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ProjectIndicatorsComponent } from './project-indicators/project-indicat
     AppraiserViewComponent,
     SelfDevelopmentComponent,
     OrganisationalComponent,
-    ProjectIndicatorsComponent
+    ProjectIndicatorsComponent,
+    TeamPerformanceComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
