@@ -1,0 +1,92 @@
+<div id="main-block">
+  <div class="container-fluid">
+    <div class="main_block p-0">
+      <h2>My Team Performance</h2>
+      <div class="d-flex my-2 indicator_table">
+        <div class="input-group col-sm-6 col-lg-6 p-0">
+          <div class="input-group-prepend">
+            <i class="fas fa-search"></i>
+          </div>
+          <input class="form-control search" placeholder="Serach by Name, Project, Status" type="text">
+        </div>
+        <div class="col-sm-6 col-lg-6">
+          <label class="float-right font-weight-bold">
+            <p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
+            Display Previous Qarter Only
+          </label>
+        </div>
+      </div>
+
+      <!--Table containing team performance QPs-->
+      <div class="learing_table">
+        <table class="table mt-2 table-bordered border-bottom-0">
+          <thead>
+            <tr>
+              <th>
+                <label>
+                  <p-checkbox name="" label="Select All" [(ngModel)]="isSelectAll" binary="true" (click)="selectAll()"></p-checkbox>
+                </label>
+              </th>
+              <th>Emp Id</th>
+              <th>Name of Employee</th>
+              <th>Project</th>
+              <th>Year</th>
+              <th>Quarter</th>
+              <th>Status</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let data of teamPerformaceTableData">
+              <td>
+                <p-checkbox name="" label="" value={{data.empId}} [(ngModel)]="selectedValues"></p-checkbox>
+              </td>
+              <td>
+                <label name="empId">
+                  {{data.empId}}
+                </label>
+              </td>
+              <td>
+                <label name="Quarter">
+                  {{data.name}}
+                </label>
+              </td>
+              <td>
+                <label name="project">
+                  {{data.project}}
+                </label>
+              </td>
+              <td>
+                <label name="year">
+                  {{data.year}}
+                </label>
+              </td>
+              <td>
+                <label name="quarter">
+                  {{data.quarter}}
+                </label>
+              </td>
+              <td>
+                <label name="status">
+                  <a href="#">
+                    {{data.status}}
+                  </a>
+                </label>
+              </td>
+              <td>
+                <label name="LastUpdateDate">
+                  {{data.lastUpdated}}
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="my-2">
+          <button pButton type="button" label="Review" class="ui-button-success"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
