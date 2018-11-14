@@ -1,0 +1,16 @@
+<header class="domain-admin__header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary text-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/img/logo-wrs.png" class="big" alt="" /> 
+      </a>
+      <div class="float-right" id="navbarSupportedContent">
+        <form #loginEmail="ngForm" (ngSubmit)="authenticate(loginEmail)">
+          <input #email="ngModel" [(ngModel)]="login_email" name="email" type="text" placeholder="Email" required>
+          <button type="submit" class="btn btn-success btn-sm">Login</button>
+          <div [hidden]="email.valid || (!loginEmail.submitted && email.untouched)" class="alert alert-danger"> Email is required </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
