@@ -1,4 +1,4 @@
-:host >>> .ui-tabview {
+/* :host >>> .ui-tabview {
     padding: 0;
 }
 
@@ -32,9 +32,8 @@
     text-align: center;
 }
 
-/* :host >>> body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active
+:host >>> body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active
 {
     background: #D5E7FF;
     color: #177dfb;
-} */
-
+} 
