@@ -1,4 +1,4 @@
-:host >>> .ui-tabview {
+/* :host >>> .ui-tabview {
     padding: 0;
 }
 
@@ -28,13 +28,12 @@
     padding: 12px;
     font-size: 13px;
     border-right: 1px solid #fff;
-    width: 32%;
+    width: 33.10%;
     text-align: center;
 }
 
-/* :host >>> body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active
+:host >>> body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active
 {
     background: #D5E7FF;
     color: #177dfb;
-} */
-
+} 
