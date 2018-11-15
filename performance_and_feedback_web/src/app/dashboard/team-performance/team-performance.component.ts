@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamPerformanceService } from './team-performance.service';
+import { TeamPerformance } from './team-performance';
 
 @Component({
   selector: 'app-team-performance',
@@ -11,15 +13,15 @@ export class TeamPerformanceComponent implements OnInit {
   selectedValues: string[] = [];
   teamPerformaceTableData: any[];
 
-  constructor() { }
+  constructor(private teamPerformanceDataService: TeamPerformanceService) { }
 
   ngOnInit() {
-    this.teamPerformaceTableData = [
-      { empId: 'E01/1000', name: 'Amit', project: 'Eci', year: '2018', quarter: 'Q1', status: 'Active', lastUpdated: '' },
-      { empId: 'E01/1001', name: 'Yash', project: 'Eci', year: '2017', quarter: 'Q1', status: 'Locked', lastUpdated: '' },
-      { empId: 'E01/1003', name: 'Amit', project: 'Eci', year: '2018', quarter: 'Q1', status: 'Active', lastUpdated: '' },
-      { empId: 'E01/1004', name: 'Yash', project: 'Eci', year: '2017', quarter: 'Q1', status: 'Locked', lastUpdated: '' },
-    ];
+    this.getTeamPerformanceData();
+  }
+  
+  getTeamPerformanceData() {
+    this.teamPerformanceDataService.getTeamPerformanceData()
+      .subscribe(response => this.teamPerformaceTableData = response);
   }
 
   selectAll() {

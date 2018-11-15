@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Member} from '../member';
-import {UserService} from '../user.service';
+import {Member} from '../../member';
+import {UserService} from '../../user.service';
 import {Rating} from '../rating';
 import {Ratings} from '../rating-list';
 import {RatingService} from '../rating.service';

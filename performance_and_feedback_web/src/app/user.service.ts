@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Member} from './member';
 import { Observable } from 'rxjs';
-import {Ratings} from './rating-list';
 
 @Injectable({
   providedIn: 'root'
