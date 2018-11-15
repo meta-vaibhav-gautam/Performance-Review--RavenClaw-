@@ -14,7 +14,7 @@ export class AuthenticationService {
 
   public currentUser() {
     let id = this.cookieService.getCookie('resource_id')
-    return this.http.get(environment.userInfoUrl)
+    return this.http.get<any>(environment.userInfoUrl, {params: { "doIntercept": "false"}})
       .pipe(
         tap((user: any) => {
           console.log('User Fetched', user)

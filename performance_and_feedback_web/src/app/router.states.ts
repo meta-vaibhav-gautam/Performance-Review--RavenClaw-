@@ -8,7 +8,9 @@ import { AuthorizedComponent } from './authorized/authorized.component';
 import { AuthorizedHeaderComponent } from './authorized-header/authorized-header.component';
 import { LandingHeaderComponent } from './landing-header/landing-header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SelfDevelopmentComponent } from './self-development/self-development.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppraiserViewComponent } from './appraiser-view/appraiser-view.component';
 
 // Check for session
 function isAuthenticated(access_token) {
@@ -58,14 +60,6 @@ export const welcomeState = {
   }
 };
 
-export const helloState = {
-  name: 'app.welcome.hello',
-  url: '/hello',
-  views: {
-    '@': { component: SelfDevelopmentComponent },
-  }
-};
-
 export const homeState = {
   name: 'app.welcome.home',
   url: '/',
@@ -86,8 +80,6 @@ export const logoutState = {
 };
 
 
-
-
 // States for Authenticated Users
 export const authorizedState = {
   name: 'app.authorized',
@@ -95,7 +87,8 @@ export const authorizedState = {
   views: {
     'header@^.^': { component: AuthorizedHeaderComponent },
     '@': { component: AuthorizedComponent },
-    'footer@^.^': { component: FooterComponent },
+    'nav@^.^': { component: SideBarComponent },
+    // 'footer@^.^': { component: FooterComponent },
   },
   resolve: [
     { token: 'user', deps: [AuthenticationService], resolveFn: resolveUser },
@@ -110,8 +103,19 @@ export const authorizedHomeState = {
   name: 'app.authorized.home',
   url: '/',
   views: {
-    'header@^.^': { component: AuthorizedHeaderComponent },
-    '@': { component: AuthorizedComponent }
+    // 'header@^.^': { component: AuthorizedHeaderComponent },
+    '@': { component: DashboardComponent }
+  },
+  resolve: [
+  ]
+};
+
+export const authorizedAppraiserViewState = {
+  name: 'app.authorized.appraiser-view',
+  url: '/appraiser-view',
+  views: {
+    // 'header@^.^': { component: AuthorizedHeaderComponent },
+    '@': { component: AppraiserViewComponent }
   },
   resolve: [
   ]
@@ -124,5 +128,5 @@ export const ROUTE_STATES = [
   logoutState,
   authorizedState,
   authorizedHomeState,
-  helloState
+  authorizedAppraiserViewState
 ];
