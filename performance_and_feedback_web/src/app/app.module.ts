@@ -18,6 +18,7 @@ import { AuthorizedHeaderComponent } from './authorized-header/authorized-header
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {UIRouterModule} from "@uirouter/angular";
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 /**
@@ -31,6 +32,7 @@ import { AppraiserViewComponent } from './appraiser-view/appraiser-view.componen
 import { SelfDevelopmentComponent } from './appraiser-view/self-development/self-development.component';
 import { OrganisationalComponent } from './appraiser-view/organisational/organisational.component';
 import { ProjectIndicatorsComponent } from './appraiser-view/project-indicators/project-indicators.component';
+import { ProjectPerformanceComponent } from './dashboard/project-performance/project-performance.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { ProjectIndicatorsComponent } from './appraiser-view/project-indicators/
     AppraiserViewComponent,
     SelfDevelopmentComponent,
     OrganisationalComponent,
-    ProjectIndicatorsComponent
+    ProjectIndicatorsComponent,
+    ProjectPerformanceComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,8 @@ import { ProjectIndicatorsComponent } from './appraiser-view/project-indicators/
     AppRoutingModule,
     AngularFontAwesomeModule,
     PrimeNgModule,
-    UIRouterModule
+    UIRouterModule,
+    Ng2SearchPipeModule
 
   ],
   providers: [
