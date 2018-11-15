@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamPerformanceService } from '../team-performance.service';
-import { TeamPerformance } from '../team-performance';
+import { TeamPerformanceService } from './team-performance.service';
+import { TeamPerformance } from './team-performance';
 
 @Component({
   selector: 'app-team-performance',

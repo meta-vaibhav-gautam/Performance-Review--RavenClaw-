@@ -17,13 +17,20 @@ import { AuthorizedComponent } from './authorized/authorized.component';
 import { AuthorizedHeaderComponent } from './authorized-header/authorized-header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { AppraiserViewComponent } from './appraiser-view/appraiser-view.component';
-import { SelfDevelopmentComponent } from './self-development/self-development.component';
-import { OrganisationalComponent } from './organisational/organisational.component';
-import { ProjectIndicatorsComponent } from './project-indicators/project-indicators.component';
-import { TeamPerformanceComponent } from './team-performance/team-performance.component';
+import {UIRouterModule} from "@uirouter/angular";
+
+
+/**
+ * Appraiser and normalizer
+ * Team component's
+ */
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { TeamPerformanceComponent } from './dashboard/team-performance/team-performance.component';
+import { AppraiserViewComponent } from './appraiser-view/appraiser-view.component';
+import { SelfDevelopmentComponent } from './appraiser-view/self-development/self-development.component';
+import { OrganisationalComponent } from './appraiser-view/organisational/organisational.component';
+import { ProjectIndicatorsComponent } from './appraiser-view/project-indicators/project-indicators.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +41,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AuthorizedHeaderComponent,
     FooterComponent,
     SideBarComponent,
+    DashboardComponent,
+    TeamPerformanceComponent,
     AppraiserViewComponent,
     SelfDevelopmentComponent,
     OrganisationalComponent,
-    ProjectIndicatorsComponent,
-    TeamPerformanceComponent,
-    DashboardComponent
+    ProjectIndicatorsComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ToasterModule.forRoot(),
     AppRoutingModule,
     AngularFontAwesomeModule,
-    PrimeNgModule
+    PrimeNgModule,
+    UIRouterModule
+
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
