@@ -1,13 +1,14 @@
 <div id="main-block">
   <div class="container-fluid">
     <div class="main_block p-0">
-      <h2>My Team Performance</h2>
+      <h2>My Project Performance</h2>
       <div class="d-flex my-2 indicator_table">
         <div class="input-group col-sm-6 col-lg-6 p-0">
           <div class="input-group-prepend">
             <i class="fas fa-search"></i>
           </div>
-          <input class="form-control search" [(ngModel)]="teamPerformanceDataFilter" placeholder="Serach by Name, Project, Status" type="text">
+          <input class="form-control search" [(ngModel)]="projectPerformanceDataFilter" placeholder="Serach by Name, Project, Status"
+            type="text">
         </div>
         <div class="col-sm-6 col-lg-6">
           <label class="float-right font-weight-bold">
@@ -30,6 +31,7 @@
               <th>Emp Id</th>
               <th>Name of Employee</th>
               <th>Project</th>
+              <th>Reporting Manager</th>
               <th>Year</th>
               <th>Quarter</th>
               <th>Status</th>
@@ -38,7 +40,7 @@
           </thead>
 
           <tbody>
-            <tr *ngFor="let data of teamPerformaceTableData | filter: teamPerformanceDataFilter">
+            <tr *ngFor="let data of projectPerformaceTableData | filter: projectPerformanceDataFilter">
               <td>
                 <p-checkbox name="" label="" value={{data.empId}} [(ngModel)]="selectedValues"></p-checkbox>
               </td>
@@ -55,6 +57,11 @@
               <td>
                 <label name="project">
                   {{data.project}}
+                </label>
+              </td>
+              <td>
+                <label name="reportingManager">
+
                 </label>
               </td>
               <td>
@@ -84,7 +91,7 @@
         </table>
 
         <div class="my-2">
-          <button pButton type="button" label="Review" class="ui-button-success"></button>
+          <button pButton type="button" label="Normalizer View" class="ui-button-success"></button>
         </div>
       </div>
     </div>
