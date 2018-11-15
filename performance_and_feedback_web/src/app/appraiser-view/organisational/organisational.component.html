@@ -1,271 +1,264 @@
-
-<div id="main-block">
-  <div class="container-fluid">
-    <div class="main_block p-0 indicator_table table-responsive">
-      <div class="input-group col-sm-6 col-lg-6 p-0">
-        <div class="input-group-prepend">
-          <i class="fas fa-search"></i>
-        </div>
-        <input class="form-control search" type="text">
-      </div>
-      <table class="table table-bordered ">
-        <thead>
-          <tr>
-            <th width="40%" class="text-center" colspan="2">Organisational Development</th>
-            <th width="30%" colspan="2">Member 1 <i class="fas fa-info-circle"></i></th>
-          </tr>
-          <tr>
-            <th colspan="2"></th>
-            <th class="text-dark" colspan="2">Email ID: ritu.sharma@metacube.com
-              <br>DOJ: 21-01-1992</th>
-          </tr>
-          <tr class="text-center">
-            <th>Project Performance</th>
-            <th>Description</th>
-            <th>Ritu Goyal</th>
-            <th>Comments</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              What was the individual's Contribution towards skill development in the organisation?</td>
-            <td>You can rate the efforts put in by the individual based on the data provided by him/her. You could
-              use
-              the
-              following guidline for converting the effort into a score: 40+ hrs(4), 30+ hrs(3), 20+ hrs(2) and 10+
-              hrs(1).</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option disabled="true" selected="true">Select Rating</option>
-                  <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
-                </select>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Hours of training sessions conducted(including GET sessions)</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span>15hrs</span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-          <tr class="row-height">
-            <td></td>
-            <td>Hours of seminars conducted.</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span>4hrs</span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              What was the individual's contribution towards recruitment process? </td>
-            <td>You can rate the efforts put in the individual based on the data provided by him/her. You could use
-              the
-              following guideline for convertingthe effort into a score: 40+ hrs (4), 30+ hrs (3), 20+ hrs (2) and
-              10+
-              hrs (1).</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option disabled="true" selected="true">Select Rating</option>
-                  <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
-                </select>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Number of interviews conducted</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span>10hrs</span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Number of test papers corrected</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span>5hrs</span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Number of questions contributd to recruitment process</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span>6hrs</span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td>
-              What was the individual's contribution towards Organisation brand building? </td>
-            <td>You can rate the efforts put in the individual based on the data provided by him/her. You could use
-              the
-              following guideline for convertingthe effort into a score: 40+ hrs (4), 30+ hrs (3), 20+ hrs (2) and
-              10+
-              hrs (1).</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option disabled="true" selected="true">Select Rating</option>
-                  <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
-                </select>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Number of tech talks given on external forums</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span></span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Participation in national and international competitions</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span></span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Other contribution to social media</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span></span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              What was the individual's contribution towards organisation of events? </td>
-            <td>You can rate the efforts put in the individual based on the data provided by him/her. You could use
-              the
-              following guideline for convertingthe effort into a score: 40+ hrs (4), 30+ hrs (3), 20+ hrs (2) and
-              10+
-              hrs (1).</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option disabled="true" selected="true">Select Rating</option>
-                  <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
-                </select>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Cultural</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span></span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>Sports</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span></span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-
-
-          <tr class="row-height">
-            <td>
-            </td>
-            <td>CSR</td>
-            <td class="p-0 m-0">
-              <div class="form-group">
-                <span></span>
-              </div>
-            </td>
-            <td class="group_btn p-0">
-              <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="input-group col-sm-6 col-lg-6 p-0">
+  <div class="input-group-prepend">
+    <i class="fas fa-search"></i>
   </div>
+  <input class="form-control search" type="text">
 </div>
+<table class="table table-bordered ">
+  <thead>
+    <tr>
+      <th width="40%" class="text-center" colspan="2">Organisational Development</th>
+      <th width="30%" colspan="2">Member 1 <i class="fas fa-info-circle"></i></th>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+      <th class="text-dark" colspan="2">Email ID: ritu.sharma@metacube.com
+        <br>DOJ: 21-01-1992</th>
+    </tr>
+    <tr class="text-center">
+      <th>Project Performance</th>
+      <th>Description</th>
+      <th>Ritu Goyal</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        What was the individual's Contribution towards skill development in the organisation?</td>
+      <td>You can rate the efforts put in by the individual based on the data provided by him/her. You could
+        use
+        the
+        following guidline for converting the effort into a score: 40+ hrs(4), 30+ hrs(3), 20+ hrs(2) and 10+
+        hrs(1).</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option disabled="true" selected="true">Select Rating</option>
+            <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
+          </select>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Hours of training sessions conducted(including GET sessions)</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span>15hrs</span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr class="row-height">
+      <td></td>
+      <td>Hours of seminars conducted.</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span>4hrs</span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        What was the individual's contribution towards recruitment process? </td>
+      <td>You can rate the efforts put in the individual based on the data provided by him/her. You could use
+        the
+        following guideline for convertingthe effort into a score: 40+ hrs (4), 30+ hrs (3), 20+ hrs (2) and
+        10+
+        hrs (1).</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option disabled="true" selected="true">Select Rating</option>
+            <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
+          </select>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Number of interviews conducted</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span>10hrs</span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Number of test papers corrected</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span>5hrs</span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Number of questions contributd to recruitment process</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span>6hrs</span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        What was the individual's contribution towards Organisation brand building? </td>
+      <td>You can rate the efforts put in the individual based on the data provided by him/her. You could use
+        the
+        following guideline for convertingthe effort into a score: 40+ hrs (4), 30+ hrs (3), 20+ hrs (2) and
+        10+
+        hrs (1).</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option disabled="true" selected="true">Select Rating</option>
+            <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
+          </select>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Number of tech talks given on external forums</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span></span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Participation in national and international competitions</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span></span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Other contribution to social media</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span></span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        What was the individual's contribution towards organisation of events? </td>
+      <td>You can rate the efforts put in the individual based on the data provided by him/her. You could use
+        the
+        following guideline for convertingthe effort into a score: 40+ hrs (4), 30+ hrs (3), 20+ hrs (2) and
+        10+
+        hrs (1).</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option disabled="true" selected="true">Select Rating</option>
+            <option *ngFor="let ratings of ratingList">{{ratings.name}} / {{ratings.percentage}}%</option>
+          </select>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Cultural</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span></span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>Sports</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span></span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+
+
+    <tr class="row-height">
+      <td>
+      </td>
+      <td>CSR</td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <span></span>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>
