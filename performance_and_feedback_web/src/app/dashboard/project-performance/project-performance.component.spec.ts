@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelfDevelopmentComponent } from './self-development.component';
+import { ProjectPerformanceComponent } from './project-performance.component';
 
-describe('SelfDevelopmentComponent', () => {
-  let component: SelfDevelopmentComponent;
-  let fixture: ComponentFixture<SelfDevelopmentComponent>;
+describe('ProjectPerformanceComponent', () => {
+  let component: ProjectPerformanceComponent;
+  let fixture: ComponentFixture<ProjectPerformanceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SelfDevelopmentComponent ]
+      declarations: [ ProjectPerformanceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SelfDevelopmentComponent);
+    fixture = TestBed.createComponent(ProjectPerformanceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
