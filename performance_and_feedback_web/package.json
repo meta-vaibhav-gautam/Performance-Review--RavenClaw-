@@ -23,7 +23,7 @@
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "@ngx-progressbar/core": "^5.0.1",
     "@ngx-progressbar/http": "^5.0.1",
-    "@uirouter/angular": "^2.0.0",
+    "@uirouter/angular": "^2.0.2",
     "@uirouter/visualizer": "^6.0.0",
     "angular-font-awesome": "^3.1.2",
     "angular2-toaster": "^6.1.0",

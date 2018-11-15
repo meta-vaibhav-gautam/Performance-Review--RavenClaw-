@@ -22,6 +22,7 @@ import { AppraiserViewComponent } from './appraiser-view/appraiser-view.componen
 import { SelfDevelopmentComponent } from './self-development/self-development.component';
 import { OrganisationalComponent } from './organisational/organisational.component';
 import { ProjectIndicatorsComponent } from './project-indicators/project-indicators.component';
+import {UIRouterModule} from "@uirouter/angular";
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ProjectIndicatorsComponent } from './project-indicators/project-indicat
     ToasterModule.forRoot(),
     AppRoutingModule,
     AngularFontAwesomeModule,
-    PrimeNgModule
+    PrimeNgModule,
+
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },

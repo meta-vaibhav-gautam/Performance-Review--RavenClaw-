@@ -8,6 +8,7 @@ import { AuthorizedComponent } from './authorized/authorized.component';
 import { AuthorizedHeaderComponent } from './authorized-header/authorized-header.component';
 import { LandingHeaderComponent } from './landing-header/landing-header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SelfDevelopmentComponent } from './self-development/self-development.component';
 
 // Check for session
 function isAuthenticated(access_token) {
@@ -57,6 +58,14 @@ export const welcomeState = {
   }
 };
 
+export const helloState = {
+  name: 'app.welcome.hello',
+  url: '/hello',
+  views: {
+    '@': { component: SelfDevelopmentComponent },
+  }
+};
+
 export const homeState = {
   name: 'app.welcome.home',
   url: '/',
@@ -75,6 +84,8 @@ export const logoutState = {
     '@': { component: HomeComponent },
   }
 };
+
+
 
 
 // States for Authenticated Users
@@ -113,5 +124,5 @@ export const ROUTE_STATES = [
   logoutState,
   authorizedState,
   authorizedHomeState,
-
+  helloState
 ];
