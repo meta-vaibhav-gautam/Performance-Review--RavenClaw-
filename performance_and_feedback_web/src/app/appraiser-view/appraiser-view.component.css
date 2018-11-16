@@ -1,39 +1,52 @@
-/* :host >>> .ui-tabview {
-    padding: 0;
-}
-
-:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a, .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active a, .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active a, .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active a
-{
-    background: #D5E7FF;
-    color: #177dfb;
-}
-
-/* :host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a 
-{
-    padding: 1rem;
-} */
-
 :host >>> .ui-tabview .ui-tabview-panels {
     padding: 0px;
     border: none;
 }
 
-
-
-
-:host >>> .ui-tabview li {
+:host >>> .ui-tabview-nav {
+    flex-direction: row;
+    width: 100%;
+    background: #f1f1f1;
+    display: flex;
+}
+:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li{
     border: 0;
-    margin: 0;
-    text-align: center;
-    padding: 12px;
-    font-size: 13px;
-    border-right: 1px solid #fff;
-    width: 33.10%;
+    margin: 0 2px 5px 0;
+    width: 33.33%;
     text-align: center;
 }
+:host >>> .ui-tabview-title{
+    padding: 1rem 0;
+    display: inline-block;
+    color: #656565;
+}
+:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li a{
+    color: #656565;
+    padding: 0em 1em;
+}
+.indicator-table li:last-child {
+    border-right: none;
+}
+:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active{
+    text-decoration: none;
+    background: #d5e7ff;
+    border: 0;
+}
+:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover{
+    border: 0;
+    background: #d5e7ff;
+}
+:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:focus{
+    outline : none;
+    background: #d5e7ff;
+}
+:host >>> .ui-corner-top {
+    border-radius: 0;
+}
 
-:host >>> body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active
-{
+:host >>> .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
+    text-decoration: none;
     background: #D5E7FF;
-    color: #177dfb;
-} 
+    outline: none;
+    border: none;
+}
