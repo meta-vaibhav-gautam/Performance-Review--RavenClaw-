@@ -1,0 +1,116 @@
+<div class="input-group col-sm-6 col-lg-12 p-0">
+  <div class="input-group-prepend">
+    <i class="fas fa-search"></i>
+  </div>
+  <input class="form-control search" placeholder="Search" type="text">
+</div>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th width="35%" class="text-center text-primary" colspan="2">Performance Group</th>
+      <th width="24%" class="text-primary" colspan="2">Member 1 <i class="fa fa-info-circle"></i></th>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+      <th class="text-dark" colspan="2">Email ID: {{user.email}}
+        <br>DOJ: {{user.doj | date:'dd/mm/yyyy'}}</th>
+    </tr>
+    <tr class="text-center text-primary">
+      <th>Self Development</th>
+      <th>Description</th>
+      <th>{{user.name}}</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        What percentage of goal for review period were completed satisfactorily?
+      </td>
+      <td></td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <select class="form-control" id="selectForPercentOfGoalReview">
+            <option selected="true" disabled="true">Select Rating</option>
+            <option *ngFor="let rating of ratings | async">{{rating.name}}/ {{rating.percentage}}</option>
+          </select>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Has the individual learnt something beyond the planned goals?
+      </td>
+      <td>You can rate the efforts put in by individual based on the data provided by him/her. You could use the
+        following guideline for converting the effort into a score: 20+hours (4), 15+hours (3), 10+hours (2), 5+
+        hours (1).
+      </td>
+      <td class="p-0 m-0">
+        <div class="form-group">
+          <select class="form-control" id="selectForIndividualEffort">
+            <option selected="true" disabled="true">Select Rating</option>
+            <option *ngFor="let rating of ratings | async">{{rating.name}}/ {{rating.percentage}}</option>
+          </select>
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr class = "row-height">
+      <td>
+      </td>
+      <td>New Certifications</td>
+      <td class="p-0 m-0  align-top">
+        <div class="form-group">
+          <input type="text" class="form-control" id="newCertificationsHours" [(ngModel)]="user.newCertification">
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr class = "row-height">
+      <td>
+      </td>
+      <td>Classroom training sessions or seminars attended.</td>
+      <td class="p-0 m-0 align-top">
+        <div class="form-group">
+          <input type="text" class="form-control" id="trainingAndSeminarHours" [(ngModel)]="user.trainingAndSeminars">
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr class = "row-height">
+      <td>
+      </td>
+      <td>Webinars Attended</td>
+      <td class="p-0 m-0 align-top">
+        <div class="form-group">
+          <input type="text" class="form-control" id="webinarHours" [(ngModel)]="user.webinars">
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+    <tr class = "row-height">
+      <td>
+      </td>
+      <td>Others</td>
+      <td class="p-0 m-0 align-top">
+        <div class="form-group">
+          <input type="text" class="form-control" id="otherHours" [(ngModel)]="user.others">
+        </div>
+      </td>
+      <td class="group_btn p-0">
+        <textarea class="form-control" placeholder="Comments..." rows="2"></textarea>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+<div id="main-block">
+  <div class="container-fluid">
+    <div class="main_block p-0 indicator_table table-responsive">
+      <div class="col-sm p-0">
+          <nav class="navbar navbar-inverse">
+            <p-tabView class="nav navbar-nav indicator-table">
+              <p-tabPanel leftIcon="fas fa-cogs" header="Project Indicators" class="active">
+                  <app-project-indicators></app-project-indicators>
+              </p-tabPanel>
+              <p-tabPanel leftIcon="fas fa-chart-bar" header="Self Development" class="active">
+                  <app-self-development></app-self-development>
+              </p-tabPanel>
+              <p-tabPanel leftIcon="fas fa-sitemap" header="Organisational" class="active">
+                  <app-organisational></app-organisational>
+              </p-tabPanel>
+              <div class="col-sm-12 buttons-row text-right p-0">
+                <button class="btn btn-default btn-sm" type="button">Cancel</button>
+                <button class="btn btn-success btn-sm mr-0" type="submit">Save</button>
+              </div>
+            </p-tabView>
+          </nav>
+      </div> 
+    </div>
+  </div>
+</div>

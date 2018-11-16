@@ -1,16 +1,16 @@
 import { Transition } from '@uirouter/core';
 
-import { CookieService } from './_services/cookie.service';
-import { AuthenticationService } from './_services/authentication.service';
 
 import { HomeComponent } from './home/home.component';
 import { AuthorizedComponent } from './authorized/authorized.component';
 import { AuthorizedHeaderComponent } from './authorized-header/authorized-header.component';
 import { LandingHeaderComponent } from './landing-header/landing-header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { AppraiserViewComponent } from './appraiser-view/appraiser-view.component';
+import { CookieService } from './shared/services/cookie.service';
+import { AuthenticationService } from './shared/services/authentication.service';
+import { SideBarComponent } from './features/appraiser/side-bar/side-bar.component';
+import { DashboardComponent } from './features/appraiser/dashboard/dashboard.component';
+import { AppraiserViewComponent } from './features/appraiser/appraiser-view/appraiser-view.component';
 
 // Check for session
 function isAuthenticated(access_token) {

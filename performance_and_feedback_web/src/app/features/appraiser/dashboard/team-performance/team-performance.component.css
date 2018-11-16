@@ -1,0 +1,11 @@
+.input{
+    width: 500px!important;
+    border-left: 0px!important;
+    border-radius: 0px!important;
+}
+
+#search-icon {
+    padding: 5px 15px 7px 5px!important;
+    border: 1px solid darkgrey!important;
+    border-right: 0px!important;
+}

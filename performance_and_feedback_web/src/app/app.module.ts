@@ -3,12 +3,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
+
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpModule } from '@ngx-progressbar/http';
 import { ToasterModule } from 'angular2-toaster';
 import { RequestInterceptor } from './_helpers/request.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -16,23 +17,14 @@ import { LandingHeaderComponent } from './landing-header/landing-header.componen
 import { AuthorizedComponent } from './authorized/authorized.component';
 import { AuthorizedHeaderComponent } from './authorized-header/authorized-header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import {UIRouterModule} from "@uirouter/angular";
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {UIRouterModule} from "@uirouter/angular";
 
+//appraiser module import
+import { AppraiserModule } from './features/appraiser/appraiser.module';
 
-/**
- * Appraiser and normalizer
- * Team component's
- */
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { TeamPerformanceComponent } from './dashboard/team-performance/team-performance.component';
-import { AppraiserViewComponent } from './appraiser-view/appraiser-view.component';
-import { SelfDevelopmentComponent } from './appraiser-view/self-development/self-development.component';
-import { OrganisationalComponent } from './appraiser-view/organisational/organisational.component';
-import { ProjectIndicatorsComponent } from './appraiser-view/project-indicators/project-indicators.component';
-import { ProjectPerformanceComponent } from './dashboard/project-performance/project-performance.component';
+//module for primeNG components
+import { PrimeNgModule } from './features/appraiser/prime-ng/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -41,15 +33,7 @@ import { ProjectPerformanceComponent } from './dashboard/project-performance/pro
     LandingHeaderComponent,
     AuthorizedComponent,
     AuthorizedHeaderComponent,
-    FooterComponent,
-    SideBarComponent,
-    DashboardComponent,
-    TeamPerformanceComponent,
-    AppraiserViewComponent,
-    SelfDevelopmentComponent,
-    OrganisationalComponent,
-    ProjectIndicatorsComponent,
-    ProjectPerformanceComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -61,11 +45,10 @@ import { ProjectPerformanceComponent } from './dashboard/project-performance/pro
     NgProgressHttpModule.forRoot(),
     ToasterModule.forRoot(),
     AppRoutingModule,
-    AngularFontAwesomeModule,
+    AppraiserModule,
     PrimeNgModule,
-    UIRouterModule,
-    Ng2SearchPipeModule
-
+    Ng2SearchPipeModule,
+    UIRouterModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
