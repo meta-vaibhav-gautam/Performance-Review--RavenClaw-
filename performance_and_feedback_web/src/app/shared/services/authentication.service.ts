@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { tap, catchError, delay, map } from 'rxjs/operators';
-import { CookieService } from '../_services/cookie.service';
-import { environment } from '../../environments/environment';
 import { StateService } from '@uirouter/core';
+import { CookieService } from './cookie.service';
+import { environment } from '../../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CookieService } from '../_services/cookie.service';
 import { environment } from '../../environments/environment';
+import { CookieService } from '../shared/services/cookie.service';
 
 @Component({
   selector: 'app-authorized-header',

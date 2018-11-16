@@ -1,4 +1,4 @@
-import { Rating } from './rating';
+import { Rating } from '../app/shared/models/rating';
 
 export const Ratings: Rating[] = [
     { name: 'Always / Strongly Agree', percentage: 100 },

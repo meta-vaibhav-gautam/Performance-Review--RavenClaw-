@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { RatingService } from '../rating.service';
-import { Rating } from '../rating';
-import { UserService } from '../../user.service';
-import { Member } from '../../member';
+import { RatingService } from '../../../../shared/services/rating.service';
+import { Rating } from '../../../../shared/models/rating';
+import { UserService } from '../../../../shared/services/user.service';
+import { Member } from '../../../../shared/models/member';
 
 
 @Component({

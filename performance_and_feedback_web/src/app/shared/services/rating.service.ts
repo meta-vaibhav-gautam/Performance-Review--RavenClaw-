@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Rating } from './rating';
-import { Ratings } from './rating-list';
+import { Rating } from '../models/rating';
+import { Ratings } from '../../../assets/rating-list';
 @Injectable({
   providedIn: 'root'
 })

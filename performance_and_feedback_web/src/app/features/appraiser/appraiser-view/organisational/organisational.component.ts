@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {RatingService} from '../rating.service';
-import {Rating} from '../rating';
+import {RatingService} from '../../../../shared/services/rating.service';
+import {Rating} from '../../../../shared/models/rating';
 @Component({
   selector: 'app-organisational',
   templateUrl: './organisational.component.html',

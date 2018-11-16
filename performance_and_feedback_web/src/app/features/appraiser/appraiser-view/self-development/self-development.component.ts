@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Member} from '../../member';
-import {UserService} from '../../user.service';
-import {Rating} from '../rating';
-import {Ratings} from '../rating-list';
-import {RatingService} from '../rating.service';
+import { UserService } from '../../../../shared/services/user.service';
+import { Member } from '../../../../shared/models/member';
+import {Rating} from '../../../../shared/models/rating';
+import {Ratings} from '../../../../../assets/rating-list';
+import {RatingService} from '../../../../shared/services/rating.service';
 import { Observable, of } from 'rxjs';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Member} from './member';
+import {Member} from '../../shared/models/member';
 import { Observable } from 'rxjs';
 
 @Injectable({
