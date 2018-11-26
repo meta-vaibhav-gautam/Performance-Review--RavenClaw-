@@ -2,8 +2,6 @@ package com.metacube.tms.modal;
 
 import java.util.UUID;
 
-import com.metacube.tms.modal.enums.Rating;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +15,7 @@ public class UserPerformanceDataModel extends BaseModel implements Comparable<Us
 	String description;
 	Integer timeSpent;
 	Integer timeApproved;
-	Rating rating;
+	String rating;
 	String commentOne;
 	String commentTwo;
 	Integer order;

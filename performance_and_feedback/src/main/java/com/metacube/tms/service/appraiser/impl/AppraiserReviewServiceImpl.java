@@ -12,7 +12,6 @@ import com.metacube.tms.entity.KeyPerformanceIndicatorsLabels;
 import com.metacube.tms.entity.UserPerformanceData;
 import com.metacube.tms.entity.UserPerformanceFeedbackForm;
 import com.metacube.tms.modal.UserPerformanceDataModel;
-import com.metacube.tms.modal.enums.Rating;
 import com.metacube.tms.repository.KeyPerformanceGroupMasterRepository;
 import com.metacube.tms.repository.appraise.KeyPerformanceIndicatorsLabelsRepository;
 import com.metacube.tms.repository.appraise.KeyPerformanceIndicatorsMasterRepository;
@@ -268,8 +267,10 @@ public class AppraiserReviewServiceImpl implements AppraiserReviewService {
 							keyPerformanceIndicatorsLabels);
 			if (!checkNull(userPerformanceData)) {
 				String rating = userPerformanceData.getRating();
-				userPerformanceDataModel.setRating(changeRating(rating));
-
+				userPerformanceDataModel.setRating(rating);
+				if (!checkNull(userPerformanceData.getComment1())) {
+					userPerformanceDataModel.setCommentOne(userPerformanceData.getComment1());
+				}
 				if (!checkNull(userPerformanceData.getId())) {
 					userPerformanceDataModel.setUserPerformanceDataId(userPerformanceData.getId());
 				}
@@ -368,7 +369,7 @@ public class AppraiserReviewServiceImpl implements AppraiserReviewService {
 
 				} else {
 					if (!checkNull(userPerformanceData.getRating())) {
-						userPerformanceDataModel.setRating(changeRating(userPerformanceData.getRating()));
+						userPerformanceDataModel.setRating(userPerformanceData.getRating());
 					}
 				}
 			} else {
@@ -437,7 +438,7 @@ public class AppraiserReviewServiceImpl implements AppraiserReviewService {
 					}
 
 					if (!checkNull(userPerformanceDataModel.getRating())) {
-						userPerformanceData.setRating(changeRatingToString(userPerformanceDataModel.getRating()));
+						userPerformanceData.setRating(userPerformanceDataModel.getRating());
 					}
 					if (!checkNull(userPerformanceDataModel.getTimeApproved())) {
 						userPerformanceData.setTimeApproved(userPerformanceDataModel.getTimeApproved());
@@ -447,37 +448,5 @@ public class AppraiserReviewServiceImpl implements AppraiserReviewService {
 			}
 		}
 		return userPerformanceDataRepository.saveAll(userPerformanceDataList);
-	}
-
-	private Rating changeRating(String rating) {
-		switch (Integer.parseInt(rating)) {
-		case 100:
-			return Rating.ALWAYS;
-		case 75:
-			return Rating.OFTEN;
-		case 50:
-			return Rating.SOMETIME;
-		case 25:
-			return Rating.RARELY;
-		case 0:
-			return Rating.NEVER;
-		}
-		return null;
-	}
-
-	private String changeRatingToString(Rating rating) {
-		switch (rating) {
-		case ALWAYS:
-			return Rating.ALWAYS.getValue() + "";
-		case OFTEN:
-			return Rating.OFTEN.getValue() + "";
-		case SOMETIME:
-			return Rating.SOMETIME.getValue() + "";
-		case RARELY:
-			return Rating.RARELY.getValue() + "";
-		case NEVER:
-			return Rating.NEVER.getValue() + "";
-		}
-		return null;
 	}
 }

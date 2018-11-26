@@ -51,6 +51,7 @@ public class AppraiserReviewResource {
 	public List<UserPerformanceData> saveReview(
 			@PathVariable("userPerformanceFeedbackFormId") Long userPerformanceFeedbackFormId,
 			@RequestBody List<UserPerformanceDataModel> userPerformanceDataModelList) {
+		System.out.println(userPerformanceDataModelList.toString());
 		return appraiserReviewServiceImpl.saveReview(userPerformanceFeedbackFormId, userPerformanceDataModelList);
 	}
 }

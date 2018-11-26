@@ -25,7 +25,7 @@ public class KeyPerformanceIndicatorsLabels extends BaseEntity{
     @Column(name = "description")
     private String description;
     
-    @Column(name = "order")
+    @Column(name = "\"order\"")
     private Integer order;
     
     @Column(name = "is_editable", nullable = false)

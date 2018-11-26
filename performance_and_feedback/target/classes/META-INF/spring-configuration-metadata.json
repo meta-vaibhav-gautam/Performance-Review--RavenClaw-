@@ -1,0 +1,192 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration",
+      "name": "app",
+      "type": "com.metacube.tms.config.AppConfiguration"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration",
+      "name": "app.sso",
+      "sourceMethod": "public com.metacube.tms.config.AppConfiguration.SSO getSso() ",
+      "type": "com.metacube.tms.config.AppConfiguration$SSO"
+    },
+    {
+      "sourceType": "com.metacube.tms.WebServerConfiguration",
+      "name": "security.oauth2.client",
+      "sourceMethod": "public org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails user() ",
+      "type": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails"
+    },
+    {
+      "sourceType": "com.metacube.tms.WebServerConfiguration",
+      "name": "security.oauth2.resource",
+      "sourceMethod": "public org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties userResource() ",
+      "type": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.jwk",
+      "sourceMethod": "public org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties.Jwk getJwk() ",
+      "type": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties$Jwk"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.jwt",
+      "sourceMethod": "public org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties.Jwt getJwt() ",
+      "type": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties$Jwt"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration",
+      "name": "app.message",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration",
+      "name": "app.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration",
+      "name": "app.organization",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration$SSO",
+      "name": "app.sso.allowed-methods",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration$SSO",
+      "name": "app.sso.allowed-origins",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration$SSO",
+      "name": "app.sso.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration$SSO",
+      "name": "app.sso.path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration$SSO",
+      "name": "app.sso.scheme",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.metacube.tms.config.AppConfiguration",
+      "name": "app.version",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.access-token-uri",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.authentication-scheme",
+      "type": "org.springframework.security.oauth2.common.AuthenticationScheme"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.client-authentication-scheme",
+      "type": "org.springframework.security.oauth2.common.AuthenticationScheme"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.client-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.client-secret",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.grant-type",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.pre-established-redirect-uri",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.scope",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.token-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.use-current-uri",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails",
+      "name": "security.oauth2.client.user-authorization-uri",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties$Jwk",
+      "name": "security.oauth2.resource.jwk.key-set-uri",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties$Jwt",
+      "name": "security.oauth2.resource.jwt.key-uri",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties$Jwt",
+      "name": "security.oauth2.resource.jwt.key-value",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.prefer-token-info",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.service-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.token-info-uri",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.token-type",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties",
+      "name": "security.oauth2.resource.user-info-uri",
+      "type": "java.lang.String"
+    }
+  ]
+}
